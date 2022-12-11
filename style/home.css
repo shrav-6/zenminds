@@ -1,9 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+
 header{
-    margin: 10px;    
+    margin: 10px; 
+    margin-right: -10%;   
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 210px;
+    padding: 0px 200px;
     text-decoration: none;
 }
 .nav-area{
@@ -11,21 +14,22 @@ header{
 }
 .nav-area li{
     display: inline-block;
-    padding: 0 15px;
+    padding: 15px;
     text-transform: uppercase;
     text-decoration: none;
 }
 .nav-area li a{    
-    color: #000000;
+    color: #da6a6a;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;  
     text-decoration: none;
 }
 .nav-area li a:hover{    
-    color: #da6a6a;
+    color: #000000;
     font-family: 'Roboto', sans-serif;
     font-weight: bolder;   
-    text-decoration: none;  
+    text-decoration: none;
+    text-shadow: 20px;  
 }
 footer{
     background-color: #da6a6a;
@@ -34,7 +38,7 @@ footer{
     display: flex;
     justify-content: space-between;
     font-family: sans-serif;
-    font-size: 13px;
+    font-size: 20px;
     font-weight: 500;
 }
 .container{
@@ -43,7 +47,7 @@ footer{
     height: 70%;
 }
 .swiper {
-width: 80%;
+width: 90%;
 height: fit-content;
 }
 .swiper-slide img {
@@ -62,12 +66,15 @@ width: 100%;
     font-family: Georgia;
     font-size: 20px;
     color: #2f3030;
+    background-color: #bed7fd;
+    padding: 40px;
+    border-radius: 20px;
 }
 a{
     text-decoration: none;
 }
 .button {
-    background-color: #51B59F; /* Green */
+    background-color: #51B59F; 
     border: none;
     color: white;
     padding: 15px 32px;
@@ -77,9 +84,148 @@ a{
     font-size: 16px;
     margin: 20px 2px;
     cursor: pointer;
+    border-radius: 8px;
 }
-.journalcontainer {
+.button:hover{
+    background-color: #196e5c; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.profilecontainer {
+    font-family: Georgia;
+    font-size: 20px;
     background-color: #bed7fd;
     padding: 40px;
     border-radius: 20px;
+    margin: 10px 300px 10px 300px; 
 }
+.faqcontainer {
+    margin: 10px 200px 10px 200px; 
+    border: 10px solid #bed7fd;
+    border-radius: 5px;
+}
+.faq-title {
+    font-family: Georgia;
+    font-size: 50px;
+    margin-top: 15px;    
+    text-align: center; 
+    font-weight: bold;
+}
+.blogscontainer {
+    margin: 10px 200px 10px 200px; 
+    border: 10px solid #bed7fd;
+    border-radius: 5px;
+}
+.blogs-content {
+    padding: 0px 70px 30px 70px;
+    font-family: Georgia;
+    font-size: 20px;
+    color: #2f3030;
+    text-align: justify;
+}
+.line-1 {
+    height: 1px;
+    background: rgb(78, 76, 76);
+  }
+  .faq-section {
+    max-width: 80rem;
+    width: 100%;
+    padding-top:5%;
+    padding-bottom:5%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .faq-card {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 70%;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .faq-card:hover {
+    box-shadow: 21px 19px 47px -22px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 21px 19px 47px -22px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 21px 19px 47px -22px rgba(0, 0, 0, 0.75);
+  }
+  
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+  }
+  .faq-question--text {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .faq-question i {
+    font-size: 1.3rem;
+    color: #555;
+    outline: none;
+  }
+  .toggle-btn {
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .faq-answer-hidden {
+    font-size: 18px;
+    padding-top: 1rem;
+    line-height: 1.3;
+    letter-spacing: 0.2px;
+    color: #555;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .rotated {
+    transform: rotate(180deg);
+  }
+  
+  .active {
+    color: #00750c;
+  }
+  .goback-btn {
+    background-color: #49654c;
+    border-radius: 40px;
+    border: none;
+    color: #fff;
+    padding: 0.6rem 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 300;
+    cursor: pointer;
+  }
+  
+  .back-btn {
+    display: block;
+    text-align: center;
+    padding: 0.6rem 1rem;
+    margin: 10px auto;
+    text-decoration: none;
+    font-size: 18px;
+    width: 7rem;
+    background: #c0ceb2;
+    border: none;
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 19px;
+  }
+  .back-btn a {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  
