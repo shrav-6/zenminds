@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/title-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+
+    <title>ZenMinds</title>    
+</head>
+<body>
+<header>
+    <img class="logo" src="images/logo.png" alt="logo.png" width="35%" style="margin-bottom: 5%; margin-top: 1%;">
+    <nav>
+        <ul class="nav-area">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="journal.html">Journal</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="mhc.html">Mental Health Check</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+    </nav>    
+</header>
+<div class="journalcontainer">
+    <form class="journalform" action="#" method="POST">
+        <p style="padding-left:38%; font-size:30px; font-weight:bold;">Let your thoughts flow</p>            
+        Date: <input type="date" id="entry_date" name="entry_date"/>         
+        <br/><br/>
+        How was your day?
+        <br/>
+        <div class="input-group">        
+        <textarea class="form-control" aria-label="With textarea" placeholder="Release your thoughts to us, we are here to listen..." rows="20" id="journal_input"></textarea>
+        </div>
+        <button name="submit" type="submit" id="submit" class="button">Save</button>
+      </form>
+</div>
+<br/>
+<footer>
+    <div>© 2022, ZenMinds</div>
+    <div>Journal and Heal &#x2764;</div>
+    <div><a href="mailto:shravanthiofficial@gmail.com" style="text-decoration:none; color:white;">Contact Developer</a></div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,9 +1,10 @@
 header{
-    margin: 10px;
+    margin: 10px;    
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 400px;
+    padding: 0px 210px;
+    text-decoration: none;
 }
 .nav-area{
     list-style: none;
@@ -12,16 +13,19 @@ header{
     display: inline-block;
     padding: 0 15px;
     text-transform: uppercase;
+    text-decoration: none;
 }
 .nav-area li a{    
     color: #000000;
     font-family: 'Roboto', sans-serif;
-    font-weight: bold;   
+    font-weight: bold;  
+    text-decoration: none;
 }
 .nav-area li a:hover{    
     color: #da6a6a;
     font-family: 'Roboto', sans-serif;
-    font-weight: bolder;       
+    font-weight: bolder;   
+    text-decoration: none;  
 }
 footer{
     background-color: #da6a6a;
@@ -34,9 +38,9 @@ footer{
     font-weight: 500;
 }
 .container{
-    padding-left: 10%;
-    width: 80%;
-    height: 80%;
+    padding-left: 15%;
+    width: 70%;
+    height: 70%;
 }
 .swiper {
 width: 80%;
@@ -51,6 +55,31 @@ width: 100%;
 .swiper .swiper-pagination-bullet-active {
     background: #000000;
 }
+
+
+.journalcontainer {
+    margin: 10px 150px 10px 150px; 
+    font-family: Georgia;
+    font-size: 20px;
+    color: #2f3030;
+}
 a{
     text-decoration: none;
+}
+.button {
+    background-color: #51B59F; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 2px;
+    cursor: pointer;
+}
+.journalcontainer {
+    background-color: #bed7fd;
+    padding: 40px;
+    border-radius: 20px;
 }
