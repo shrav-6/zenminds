@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
-
 header{
     margin: 10px; 
     margin-right: -10%;   
@@ -8,6 +7,7 @@ header{
     align-items: center;
     padding: 0px 200px;
     text-decoration: none;
+    background-color: none;
 }
 .nav-area{
     list-style: none;
@@ -227,5 +227,49 @@ a{
     text-decoration: none;
     color: #000000;
   }
+.mhc-title {
+  font-family: Georgia;
+  font-size: 40px;
+  font-weight: bold;
+  color: #FF5757;
+  text-align: center;
+
+}
+
+.mhc-test {
+  margin: 10px 150px 10px 150px; 
+  border-radius: 10px;
+  border: 10px solid #bed7fd;
+  padding: 20px 20px 20px 20px;
+  font-family: Georgia;
+  font-size: 20px;  
+  color: #FF5757;
+  text-align: center;
+  font-weight: bold;
+}
+.mhc-questions {
+  padding: 25px;
+  text-align: left;
+  color: rgb(69, 69, 69);
+  display:inline-block;
   
+}
+.mhc-answers {
+  color: rgb(105, 169, 80);
+  padding: 8px;
+  font-size: 18px;
+}
+input[type="radio"] {  
+  color: currentColor;
+  width: 1em;
+  height: 1em;
+  border: 5px;
   
+}
+input[type="radio"]::before {
+  content: "";  
+}
+
+input[type="radio"]:checked {
+  color: #7acc6a;
+}

@@ -22,27 +22,18 @@
         </ul>
     </nav>    
 </header>
-
 <div class="profilecontainer">
     <form name="profileform" class="profileform">
-        <p style="padding-left:45%; font-size:30px; font-weight:bold;">Join us</p>
+        <p style="padding-left:45%; font-size:30px; font-weight:bold;">Your Profile</p>
         <div class="form-row">
             <div class="form-group col-md-4" style="display:inline-block;">    
                 <label for="inputname">Name</label>            
-                <input type="email" class="form-control" id="name" placeholder="Name" required>
+                <input type="name" class="form-control" id="name" placeholder="Name" value="" required>
             </div>            
             <div class="form-group col-md-5" style="display:inline-block; padding-left:40px;"> 
                 <label for="inputemail">Email</label>           
-                <input type="email" class="form-control" id="email" placeholder="Email" required>
-            </div>
-            <div class="form-group col-md-5">    
-                <label for="inputpassword">Password</label>          
-                <input type="password" class="form-control" id="password" placeholder="Password" required>
-            </div>        
-            <div class="form-group col-md-8">  
-                <label for="confirmpassword">Confirm Password</label>          
-                <input type="password" class="form-control" id="confirmpassword" placeholder="Confirm Password" required>
-            </div>                 
+                <input type="email" class="form-control" id="email" placeholder="Email" value="" required>
+            </div>                            
         </div> 
         <br/>
         <div id="userinterests">
@@ -50,60 +41,58 @@
             <p style="padding-left:15%; font-weight: bold;">Rate your tendency to do these activities to feel better (1 to 10)</p>
             <div style="padding: 10px;">
                 Listen to songs:            
-                <input id="songs" type="range" value="5" min="1" max="10" step="1" oninput="this.nextElementSibling.value = this.value">
-                <output>5</output>
+                <input id="songs" type="range"  min="1" max="10" step="1" oninput="this.nextElementSibling.value = this.value">
+                <output id="songsout">5</output>
             </div>
             <div style="padding: 10px;">
                 Go on a walk:            
                 <input id="walk" type="range" value="5" min="1" max="10" step="1" oninput="this.nextElementSibling.value = this.value">
-                <output>5</output>
+                <output id="walkout">5</output>
             </div>
             <div style="padding: 10px;"> 
                 Talk to a friend:            
                 <input id="talk" type="range" value="5" min="1" max="10" step="1" oninput="this.nextElementSibling.value = this.value">
-                <output>5</output>
+                <output id="talkout">5</output>
             </div>
             <div style="padding: 10px;"> 
                 Eat food:            
                 <input id="eat" type="range" value="5" min="1" max="10" step="1" oninput="this.nextElementSibling.value = this.value">
-                <output>5</output>
+                <output id="eatout">5</output>
             </div>
             <div style="padding: 10px;"> 
                 Take a nap:            
                 <input id="nap" type="range" value="5" min="1" max="10" step="1" oninput="this.nextElementSibling.value = this.value">
-                <output>5</output>
+                <output id="napout">5</output>
             </div>
             <div style="padding: 10px;"> 
                 Gaze at the sky:            
                 <input id="gaze" type="range" value="5" min="1" max="10" step="1" oninput="this.nextElementSibling.value = this.value">
-                <output>5</output>
+                <output id="gazeout">5</output>
             </div>
             <div style="padding: 10px;"> 
                 Exercise:            
                 <input id="exercise" type="range" value="5" min="1" max="10" step="1" oninput="this.nextElementSibling.value = this.value">
-                <output>5</output>
+                <output id="exerciseout">5</output>
             </div>
             <div style="padding: 10px;"> 
                 Meditate:            
                 <input id="meditate" type="range" value="5" min="1" max="10" step="1" oninput="this.nextElementSibling.value = this.value">
-                <output>5</output>
+                <output id="meditateout">5</output>
             </div>            
             <div style="padding: 10px;"> 
                 Play a game:            
                 <input id="play" type="range" value="5" min="1" max="10" step="1" oninput="this.nextElementSibling.value = this.value">
-                <output>5</output>
+                <output id="playout">5</output>
             </div>
             <div style="padding: 10px;"> 
                 Watch a show/movie:            
                 <input id="watch" type="range" value="5" min="1" max="10" step="1" oninput="this.nextElementSibling.value = this.value">
-                <output>5</output>
+                <output id="watchout">5</output>
             </div>
         </div>
-        <button name="createaccount" id="createaccount" type="submit" class="button" onclick="return validateForm(this)">Create Account</button>      
+        <button name="updateaccount" id="updateaccount" type="submit" class="button" onclick="return updateForm(this)">Update</button>      
     </form>
 </div>
-<br/>
-<br/>
 <footer>
     <div><a href="index.html"  style="text-decoration: none; color:white;">ZenMinds, Journal and Heal &#x2764;, 2022 ©</a></div>
     <div><a href="index.html#blogs" style="text-decoration: none; color:white;">Blogs</a></div>
@@ -111,6 +100,5 @@
     <div><a href="mailto:shravanthiofficial@gmail.com" style="text-decoration: none; color:white;">Contact Developer</a></div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-<script src="./js/signup.js"></script>
-</body>
+<script src="./js/profile.js"></script>
 </html>
